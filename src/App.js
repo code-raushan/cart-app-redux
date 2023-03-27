@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import './App.css';
+import Modal from './components/Modal';
 import Navbar from './components/Navbar';
 import CartContainer from './components/CartContainer';
 import { useDispatch, useSelector } from 'react-redux';
@@ -13,6 +14,7 @@ function App() {
   }, [cartItems])
   return (
     <div className="App">
+      <Modal/>
       <Navbar/>
       <CartContainer/>
     </div>
