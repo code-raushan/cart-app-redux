@@ -6,9 +6,9 @@ const initialState = {
     total: 0,
     isLoading: true
 }
-const url='https://course-api.com/react-useReducer-cart-project';
+const url='https://cart-products-json.onrender.com/data';
 
-export const getCartItems = createAsyncThunk('cart/getCartItems',()=>{
+export const getCartItems = createAsyncThunk('cart/getCartItems', ()=>{
     return fetch(url)
         .then((res)=>res.json())
         .catch(err=>console.log(err))
